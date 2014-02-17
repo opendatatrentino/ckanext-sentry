@@ -3,7 +3,7 @@
 from ckan.plugins import implements, SingletonPlugin, IMiddleware
 
 
-class ApiNgPlugin(SingletonPlugin):
+class SentryPlugin(SingletonPlugin):
     implements(IMiddleware)
 
     def make_middleware(self, app, config):
