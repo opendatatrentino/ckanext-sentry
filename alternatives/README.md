@@ -40,13 +40,13 @@ And in the ckan configuration file, add this:
 full_stack = false
 ```
 
-    This will stop the pylons error middlewhere catching these errors and
-    therefore all errors will get to sentry.
-
-    IMiddlewhere would work but it would not catch all possible errors as
-    its too close to the centre of the middlewhere stack.  i.e if
-    repoze.who for example went wrong it would not catch it.   The above
-    approach means that it catches everything as it is the outermost app.
+> This will stop the pylons error middlewhere catching these errors and
+> therefore all errors will get to sentry.
+>
+> IMiddlewhere would work but it would not catch all possible errors as
+> its too close to the centre of the middlewhere stack.  i.e if
+> repoze.who for example went wrong it would not catch it.   The above
+> approach means that it catches everything as it is the outermost app.
 
 good point.
 
