@@ -53,15 +53,11 @@ good point.
 
 ## With gunicorn
 
-I assume that something similar to the ``.wsgi`` file would work when put in
-a standard Python module, somewhere in the Python path.
+The ``my_ckan.py`` module contains all the code needed to wrap application
+in the Sentry middleware, setup logging and other goodies.
 
-So something like this should work:
+To use it:
 
-```console
-% ls
-my_ckan.py
-% cat my_ckan.py
--- content omitted but similar to the wsgi file above --
-% PYTHONPATH="$PWD" gunicorn my_ckan:application
+```
+gunicorn my_ckan:application --debug --log-level debug
 ```
