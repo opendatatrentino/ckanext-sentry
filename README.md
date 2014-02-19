@@ -3,6 +3,14 @@
 Hooks the Sentry's raven plugin into ckan/pylons wsgi middleware chain.
 
 
+## Important notice
+
+There are some known issues with this middleware insertion method.
+Have a look at the ``README.md`` in the ``alternatives`` folder (that is,
+[this directory](https://github.com/opendatatrentino/ckanext-sentry/tree/master/alternatives)
+for more information on a better solution for integrating Sentry).
+
+
 ## Usage
 
 Refer to: http://raven.readthedocs.org/en/latest/config/pylons.html
